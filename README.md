@@ -6,6 +6,6 @@ Heads x Hands videogame
 
 Telegram для связи:
 
-@paul_maleev
+@paul_maleev 
 
 https://t.me/paul_maleev
