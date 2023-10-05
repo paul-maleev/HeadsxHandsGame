@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.headsxhands.HelloController">
+   <children>
+      <Pane id="playerPane" fx:id="playerPane" layoutX="108.0" layoutY="29.0" prefHeight="364.0" prefWidth="455.0">
+         <children>
+            <TextField id="playerAttackTextField" fx:id="playerAttackTextField" layoutX="20.0" layoutY="104.0" promptText="Атака" text="10" />
+            <Label layoutX="24.0" layoutY="81.0" text="Атака" />
+            <Label layoutX="19.0" layoutY="139.0" text="Защита" />
+            <TextField id="playerDefenceTextField" fx:id="playerDefenceTextField" layoutX="20.0" layoutY="156.0" promptText="Защита" text="10" />
+            <Label layoutX="18.0" layoutY="189.0" text="Здоровье" />
+            <TextField id="playerHealthTextField" fx:id="playerHealthTextField" layoutX="20.0" layoutY="206.0" promptText="Здоровье" text="100" />
+            <Label layoutX="24.0" layoutY="243.0" text="Урон" />
+            <TextField id="playerDamageMTextField" fx:id="playerDamageMTextField" layoutX="21.0" layoutY="260.0" prefHeight="25.0" prefWidth="76.0" promptText="Урон от M" text="1" />
+            <TextField id="playerDamageNTextField" fx:id="playerDamageNTextField" layoutX="115.0" layoutY="260.0" prefHeight="25.0" prefWidth="76.0" promptText="Урон до N" text="6" />
+            <Label layoutX="107.0" layoutY="28.0" text="Параметры игрока">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane id="monsterPane" fx:id="monsterPane" layoutX="599.0" layoutY="41.0" prefHeight="340.0" prefWidth="455.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="364.0" text="Параметры монстра">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Text layoutX="14.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Атака" />
+            <Text layoutX="14.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Защита" />
+            <Text layoutX="14.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Здоровье" />
+            <TextField id="monsterAttackTextField" fx:id="monsterAttackTextField" layoutX="14.0" layoutY="65.0" text="10" />
+            <TextField id="monsterDefenceTextField" fx:id="monsterDefenceTextField" layoutX="14.0" layoutY="119.0" text="10" />
+            <TextField id="monsterHealthTextField" fx:id="monsterHealthTextField" layoutX="14.0" layoutY="188.0" text="100" />
+            <TextField id="monsterDamageMTextField" fx:id="monsterDamageMTextField" layoutX="14.0" layoutY="241.0" text="1" />
+            <TextField id="monsterDamageNTextField" fx:id="monsterDamageNTextField" layoutX="213.0" layoutY="241.0" text="6" />
+            <Label layoutX="11.0" layoutY="224.0" text="Урон" />
+         </children>
+      </Pane>
+      <TextArea id="battleLogTextArea" fx:id="battleLogTextArea" editable="false" layoutX="204.0" layoutY="452.0" prefHeight="181.0" prefWidth="778.0" text="Лог битвы" AnchorPane.bottomAnchor="68.0" />
+      <Button id="startPartyButton" fx:id="startPartyButton" layoutX="493.0" layoutY="403.0" mnemonicParsing="false" onAction="#onStartPartyButtonClick" text="Начать партию" />
+   </children>
+</AnchorPane>
